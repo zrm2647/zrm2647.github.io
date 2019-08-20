@@ -23,26 +23,26 @@
 			}
 		});
 		$(document).ready(function(){
-			/*$("#proto").on("click",function(e){
+			$("#golden").on("click",function(e){
 				$("#modContent").hide();
 				$("#unityContent").hide();
 				$("#mgContent").hide();
-				$("#protoContent").fadeIn();
+				$("#goldenContent").fadeIn();
 				
 				$("#models").removeClass("selected");
 				$("#unity").removeClass("selected");
 				$("#mg").removeClass("selected");
-				$("#proto").addClass("selected");
+				$("#golden").addClass("selected");
 			});
 			
-			$("#unity").on("click",function(e){
+			/*$("#unity").on("click",function(e){
 				$("#modContent").hide();
-				$("#protoContent").hide();
+				$("#goldenContent").hide();
 				$("#mgContent").hide();
 				$("#unityContent").fadeIn();
 				
 				$("#models").removeClass("selected");
-				$("#proto").removeClass("selected");
+				$("#golden").removeClass("selected");
 				$("#mg").removeClass("selected");
 				$("#unity").addClass("selected");
 			});*/
@@ -50,23 +50,23 @@
 			$("#mg").on("click",function(e){
 				$("#modContent").hide();
 				$("#unityContent").hide();
-				$("#protoContent").hide();
+				$("#goldenContent").hide();
 				$("#mgContent").fadeIn();
 				
 				$("#models").removeClass("selected");
 				$("#unity").removeClass("selected");
-				$("#proto").removeClass("selected");
+				$("#golden").removeClass("selected");
 				$("#mg").addClass("selected");
 			});
 			
 			$("#models").on("click",function(e){
 				$("#unityContent").hide();
-				$("#protoContent").hide();
+				$("#goldenContent").hide();
 				$("#mgContent").hide();
 				$("#modContent").fadeIn();
 				
 				$("#unity").removeClass("selected");
-				$("#proto").removeClass("selected");
+				$("#golden").removeClass("selected");
 				$("#mg").removeClass("selected");
 				$("#models").addClass("selected");
 			});
@@ -125,7 +125,7 @@
 		<ul>
 			<li><a href="#" class="selected" id="mg">Monogame</a></li>
 			<li><a href="#" id="models">3D Models</a></li>
-			<!--<li><a href="#" id="proto">Mobile Prototype</a></li>
+			<!--<li><a href="#" id="golden">Mobile goldentype</a></li>
 			<li><a href="#" id="unity">Unity Scene</a></li>-->
 		</ul>
 	</nav>
@@ -176,18 +176,12 @@
 			automatically add them to the game. This was useful for both adding levels to test out mechanics and to give a level editing thing that a lot of 
 			online games similar to ours have used (also made with C#).</p>
 		</section>
-		<!--<section id="protoContent">
-			<h1>Mobile Game Prototpye</h1>
-			<img src="images/mobileProto1.png" alt="Mobile Prototype Menu" class="printonly mobimg" />
-			<p>This particular project was to create a prototype for some kind of mobile game, paying attention to UI and proper design conventions.
-			The prototype I made was for a fighting game that had elements of an RPG game with selectable attacks and a mana bar.</p>
-			<img src="images/mobileProto2.png" alt="Screenshot with Selected Fighter" class="printonly mobimg" />
-			<p>Any screens and menus of the game were made using Photoshop / GIMP, the game doesn't exist physically, though this is obvious with the
-			character in this screenshot being a character of a completely separate game made by someone else (being used as a placeholder character).
-			While the game doesn't exist, it is an idea I may come back to in the future if I want to continue this concept.</p>
-			<img src="images/mobileMB.png" alt="Moodboard" />
-			<p class="noprint">This moodboard was made to put my thoughts and ideas together that represent what my game is. The moodboard includes games that
-			inspired my idea, words to describe the game, and other images that relate to those concepts.</p>
+		<section id="goldenContent">
+			<h1>Golden Artist Colors - Website Restructure</h1>
+            <h2>goldenpaints.com</h2>
+            <p>While doing my college co-op, I worked at Golden Artist Colors for 8 months (between August 2018 and April 2019). During this time, they had plans to restructure their website using
+            updated frameworks and compatibility with a new backend and content management system. My task was to recreate or rework the frontend of old pages using Vue.JS as the primary framework. The majority
+            of the pages on the website were worked on by me, with my teammate working on the CMS and most backend functionality. These updates are currently up on the site.</p>
 		</section>
 		<section id="unityContent">
 			<h1>Unity Project</h1>
