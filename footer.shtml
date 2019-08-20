@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+	<footer id="copyright">
+		<h3>© Copyright 2016<br>Zach Michaels<br>
+		Last Updated: <!--#config timefmt="%D %T"--><!--#flastmod file="index.html"--></h3>
+	</footer>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Notes</title>
+	<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+	<script>
+	</script>
+</head>
+
+<body>
+	<header class="noprint">
+		<!--#include virtual="header.shtml" -->
+		<!--#include virtual="nav.shtml"-->
+	</header>
+	<!--<nav>
+		<ul>
+			<li><a href="index.html" id="left">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="programming.html">Skills</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="Michaels-Resume.pdf" id="right" target="_blank">Resume</a></li>
+		</ul>
+	</nav>-->
+	<main>
+		<h1>Notes</h1>
+		<section class="noprint">
+		<h2>Citations</h2>
+			<ul>
+				<li><a href="http://www.123freevectors.com/white-seamless-background-free-vector/" target="_blank">Background image source</a>
+				<li><a href="http://www.zmescience.com/research/technology/how-many-lines-code-google-has-053443/" target="_blank">Code image source</a>
+				<li><a href="https://helpx.adobe.com/photoshop/using/workspace-basics.html" target="_blank">Photoshop image source</a>
+				<li><a href="https://steelseries.com/gaming-keyboards" target="_blank">Keyboard image source</a>
+				<li><a href="http://www.dumblittleman.com/2010/09/8-awesome-tools-to-quickly-take-notes.html" target="_blank">Notes image source</a>
+				<li><a href="http://science-all.com/house.html" target="_blank">House image source</a>
+				<li><a href="http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu" target="_blank">Dropdown menu tutorial</a>
+				<li><a href="http://www.simonbattersby.com/blog/simple-jquery-image-crossfade/" target="_blank">JQuery Crossfade tutorial</a>
+				<li><a href="https://jquery.com/" target="_blank">JQuery</a> used for various things
+				<li>Highlighted Image Links CSS borrowed from Multipage Site exercise
+				<li>Code for SPA and Image Gallery borrowed and editted from Image Gallery/Multipage exercises
+				<li>Image gallery made with JQuery.slides.min.js (located in js folder)
+				<li>Pacifico font from <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a>
+				<li><a href="https://www.tectite.com/index.php">FormMail</a>
+				<li><a href="https://www.youtube.com/watch?v=eVTXPUF4Oz4">"In the End" performed by Linkin Park, music video from Linkin Park's official YouTube channel</a> 
+			</ul>
+		</section>
+		<h2>Requirements</h2>
+		<ul>
+			<li>Will validate
+			<li>Site is responsive to screens at 720px and 480px
+			<li>DHTML/SPA application
+			<ul>
+				<li>Two pages take advantage of this (Projects and Skills)
+				<li>Fade out/Fade in animation with JQuery
+			</ul>
+			<li>JQuery image gallery (Monogame section of Projects page)
+			<li>FormMail does NOT work, I only get Forbidden errors despite file permissions being good. No response from ITS yet
+			<li>SSI
+			<ul>
+				<li>Header, Nav, and Footer included with SSI
+				<li>Last updated indicator in the footer, displays on all pages and tells when website (specifcally the index.html) last
+				updated
+			</ul>
+			<li>.htaccess
+			<ul>
+				<li>Custom 404 page if incorrect address is put in
+				<li>Password protected directory
+				<li>Links to a non-existing page and protected directory near bottom of this page
+			</ul>
+			<li>Documentation is what you're reading at the moment
+			<li>Images and code not made by me is listed on the top
+		</ul>
+		<h2>Changes from Project 2</h2>
+		<ul>
+			<li>Project 2 fixes
+			<ul>
+				<li>CSS now has its own directory in portfolio folder
+				<li>Email is now obfuscated (contact page)
+				<li>Navigation now displays what page you are on (all pages with nav)
+				<li>Any div with the "mainText" class replaced with main tag. The div with the "header" id was made into a header tag,
+				but the id is still there as it makes the script for the glowing logo work (all pages)
+				<li>Links no longer default color (notes page)
+				<li>Meta tag added and now should resize on mobile
+				<li>The nav becomes vertical buttons on 480px or smaller screens (all pages with nav)
+			</ul>
+			<li>Other Project 2 changes/improvements
+			<ul>
+				<li>Background changed (source link changed as well)
+				<li>Homepage button was not showing up properly on some pages
+				<li>Projects and Skills nav buttons no longer have a dropdown, instead each page is SPA
+				<li>Reduced number of page buttons on homepage by half (as a result of SPA)
+				<li>Projects button replaced like 4 buttons, Skills replaced 2
+				<li>Notes removed from nav
+			</ul>
+		</ul>
+		<h2>Above & Beyond</h2>
+		<ul>
+			<li>The logo changing colors with JQuery (from project 2)
+			<li>Media/Video (404 error page)
+			<li>Print CSS for a printable version of my portfolio
+			<li>An image made using the canvas tag (password protected page)
+		</ul>
+		<h2>How Could I Improve</h2>
+		<p>While I'm overall pleased with how my portfolio website looks right now, I do wish that I could further the design
+		to be look even better. Being pressed for time with the project's deadline, as well as other projects I need to work
+		on, I kept most of the design from last project and just worked to improve what was wrong last time and add what I
+		learned since then. JavaScript has a lot of potentially interesting applications that I would've liked to add as well
+		as learn what it can truly do. Image galleries were a bit of a pain, and didn't work with SPA (the error I noticed but
+		was in the dark with trying to solve it). I ended up only having the default page on my projects page use an image gallery.
+		I also wish I had more projects and other stuff that I could've added to website to flesh it out and make it look more
+		professional.</p>
+		<h2 class="noprint">Error page</h2>
+		<p class="noprint"><a href="completelyrealpage.html">Totally existing page</a></p>
+		<h2>Secret page?</h2>
+		<p class="noprint"><a href="protected/authpage.html">Secret page?</a></p>
+		<p class="screen printonly">https://people.rit.edu/zrm2647/230/portfolio/protected/authpage.html</p>
+	</main>
+	<section class="homepage">
+		<section class="linktohome">
+			<a href="index.html"><img src="images/houseBox.jpg" alt="Homepage"/></a>
+		</section>
+	</section>
+	<!--#include virtual="footer.shtml"-->
+</body>
+
+</html>

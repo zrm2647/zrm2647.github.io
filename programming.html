@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Programming/Coding Ability</title>
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+	<script>
+		"use strict"
+		$(document).ready(function()
+		{
+			console.log(window.location.pathname);
+			if(window.location.pathname ==
+			"/~zrm2647/230/portfolio/programming.html")
+			{
+				$("#skills").addClass("activePage");
+			}
+		});
+		
+		$(document).ready(function(){
+			$("#graphics").on("click",function(e){
+				$("#progContent").hide();
+				$("#graphContent").fadeIn();
+				
+				$("#programs").removeClass("selected");
+				$("#graphics").addClass("selected");
+			});
+			
+			$("#programs").on("click",function(e){
+				$("#graphContent").hide();
+				$("#progContent").fadeIn();
+				
+				$("#graphics").removeClass("selected");
+				$("#programs").addClass("selected");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header class="noprint">
+		<!--#include virtual="header.shtml" -->
+		<!--#include virtual="nav.shtml"-->
+	</header>
+	<!--<nav>
+		<ul>
+			<li><a href="index.html" id="left">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="#" class="activePage">Skills</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="Michaels-Resume.pdf" id="right" target="_blank">Resume</a></li>
+		</ul>
+	</nav>-->
+	<nav id="miniNav">
+		<ul>
+			<li><a href="#" class="selected" id="programs">Programming</a></li>
+			<li><a href="#" id="graphics">Graphical</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section id="progContent">
+			<h1>Programming & Coding Ability</h1>
+			<h2>C#</h2>
+			<p>The first programming I learned coming into college is the one I'm most familiar with. I've been using it for 2 years at this point
+			and used it within Visual Studio 2013/2015 as well as MonoDevelop for Unity.</p>
+			<h2>C++</h2>
+			<p>I've been using C++ throughout this semester, and learning it has come fairly easy due to its similarities to C#. I've been using it
+			within Visual Studio 2013/2015.</p>
+			<h2>Processing</h2>
+			<p>Processing is a Java-based programming tool used for drawing images onto a window. I dabbled with it before coming to college and
+			properly learned it last year. While I haven't truly coded in Java, Processing has many similarities as it is based on Java.</p>
+			<h2>HTML/CSS</h2>
+			<p>HTML and CSS are both something I've been using since my first year of college similar to C#. While I had trouble with it at first,
+			it's a language I've slowly grown to get used to and enjoy since I've improved by using it more.</p>
+			<h2>Unity 2D and 3D</h2>
+			<p>Unity is a popular and great engine that has been used by various developers. I've used it during my first year and afterwards using
+			both the 2D and 3D aspects to make various in-engine projects. It's something I have learned and will probably learn as I continue
+			my education.</p>
+		</section>
+		<section id="graphContent">
+			<h1>Graphical Programs</h1>
+			<h2>Adobe Photoshop</h2>
+			<p>Photoshop is probably the most common image and graphics program and it's something I've used and learned for a couple years since
+			middle school, using various versions throughout the years. I use it often as well for multiple classes and personal purposes, making 
+			it something I'm very familiar with.</p>
+			<h2>GIMP</h2>
+			<p>GIMP is a photoshop-like program that can be downloaded for free. While it doesn't have all the tools Photoshop has, it still
+			remains very similar and a reliable tool that I have, probably, used as often or more than Photoshop.</p>
+			<h2>Autodesk Maya</h2>
+			<p>For 3D modelling, I've been using Maya, something I also learned last year. While sometimes Maya gives me issues, I've become fairly
+			decent with the program and hopefully I can learn more with 3D modelling and Maya.</p>
+			<h2>Adobe Premier and After Effects(and Final Cut Pro)</h2>
+			<p>Towards the last few years of high school I took a video production class and learned a lot about Adobe Premier. Premier is a very
+			useful tool for video editing and something I took a liking to. After Effects is similar but for adding powerful effects for when you
+			need some special effects editing that Premier can't provide. I've also temporarily used Final Cut Pro, a Mac program that is very similar
+			to Premier.</p>
+		</section>
+	</main>
+	<section class="homepage">
+		<section class="linktohome">
+			<a href="index.html"><img src="images/houseBox.jpg" alt="Homepage"/></a>
+		</section>
+	</section>
+	<!--#include virtual="footer.shtml"-->
+</body>
+
+</html>

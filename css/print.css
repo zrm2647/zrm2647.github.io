@@ -1,0 +1,55 @@
+* {
+	font-family: serif;
+	background: white;
+	color: black;
+	background-image: none;
+}
+
+img{
+	width: 50%;
+	height: auto;
+	display: none;
+	margin: 0 auto;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+p {
+	text-indent: 5em;
+}
+
+nav {
+	display: none;
+}
+
+.printonly{
+	display: block;
+}
+
+#links {
+	display: none;
+}
+
+#mgGallery, #mgDescription {
+	display: none;
+}
+
+h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#form {
+	display: none;
+}
+
+.noprint{
+	display: none;
+}
+
+.mobimg {
+	width: 25%;
+	height: auto;
+}

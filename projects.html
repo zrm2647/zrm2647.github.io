@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>3D Modelling Scene</title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+	<script>
+		"use strict";
+		$(document).ready(function()
+		{
+			console.log(window.location.pathname);
+			if(window.location.pathname ==
+			"/~zrm2647/230/portfolio/projects.html")
+			{
+				$("#projects").addClass("activePage");
+			}
+		});
+		$(document).ready(function(){
+			$("#proto").on("click",function(e){
+				$("#modContent").hide();
+				$("#unityContent").hide();
+				$("#mgContent").hide();
+				$("#protoContent").fadeIn();
+				
+				$("#models").removeClass("selected");
+				$("#unity").removeClass("selected");
+				$("#mg").removeClass("selected");
+				$("#proto").addClass("selected");
+			});
+			
+			$("#unity").on("click",function(e){
+				$("#modContent").hide();
+				$("#protoContent").hide();
+				$("#mgContent").hide();
+				$("#unityContent").fadeIn();
+				
+				$("#models").removeClass("selected");
+				$("#proto").removeClass("selected");
+				$("#mg").removeClass("selected");
+				$("#unity").addClass("selected");
+			});
+			
+			$("#mg").on("click",function(e){
+				$("#modContent").hide();
+				$("#unityContent").hide();
+				$("#protoContent").hide();
+				$("#mgContent").fadeIn();
+				
+				$("#models").removeClass("selected");
+				$("#unity").removeClass("selected");
+				$("#proto").removeClass("selected");
+				$("#mg").addClass("selected");
+			});
+			
+			$("#models").on("click",function(e){
+				$("#unityContent").hide();
+				$("#protoContent").hide();
+				$("#mgContent").hide();
+				$("#modContent").fadeIn();
+				
+				$("#unity").removeClass("selected");
+				$("#proto").removeClass("selected");
+				$("#mg").removeClass("selected");
+				$("#models").addClass("selected");
+			});
+		});
+		
+		var mgCaptions = ["(1/3) This silly-titled game was made by a team which I was a member of using Visual Studio and Monogame (all C#). My main contribution was the main menu and game state implementing, an example of which is shown above.",
+		"(2/3) In this game, you play as a guy named Paul, with his goal being to collect his scattered memories around the stages to progress to the next stage. In order to do this, Paul will purposedly take damage to go between an afterlife and the living world. When the player was dead, they could float and pass through certain blocks that were solid in the living world, and vice versa for when the player was alive.",
+		"(3/3) While the game was short when we made it, we made a companion program that allowed us and other people to create and automatically add them to the game. This was useful for both adding levels to test out mechanics and to give a level editing thing that a lot of online games similar to ours have used (also made with C#)."];
+		
+        $(document).ready(function() {
+			$('#mgSlides').slidesjs(
+			{
+				width: 400,
+				height: 300,
+				pagination:
+				{
+					active: false
+				},
+				callback:
+				{
+					complete: updateCaptionMG
+				},
+				effect:
+				{
+					slide:
+					{
+						speed: 1000
+					}
+				}
+			});
+		});
+		
+		function updateCaptionMG(number)
+		{
+			var caption = mgCaptions[number-1];
+			$("#mgDescription").hide().text(caption).fadeIn();
+		}
+	</script>
+</head>
+
+<body>
+	<header class="noprint">
+		<!--#include virtual="header.shtml" -->
+		<!--#include virtual="nav.shtml"-->
+	</header>
+	<!--<nav>
+		<ul>
+			<li><a href="index.html" id="left">Home</a></li>
+			<li><a href="#" class="activePage">Projects</a></li>
+			<li><a href="programming.html">Skills</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="Michaels-Resume.pdf" id="right" target="_blank">Resume</a></li>
+		</ul>
+	</nav>-->
+	<nav id="miniNav">
+		<ul>
+			<li><a href="#" class="selected" id="mg">Monogame</a></li>
+			<li><a href="#" id="models">3D Models</a></li>
+			<li><a href="#" id="proto">Mobile Prototype</a></li>
+			<li><a href="#" id="unity">Unity Scene</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2 class="screen printonly">Projects</h2>
+		<section id="modContent">
+			<h1>3D Modelling & Scene</h1>
+			<h3>Team Members: Myself, Megan Smith, Muriel Hagge, Ryan Spencer</h3>
+			<img src="images/atst.jpg" alt="AT-ST Model" class="printonly"/>
+			<p>For this project, we needed to make a cohesive scene within Unity with models we needed to make and import
+			into Unity. For my team, we made objects and a scene based on the Battle of Endor scene from the 6th Star Wars
+			movie. The above image is a picture of one of the things I made, which was an AT-ST. For this model, I needed to
+			use multiple shapes to make to create it due to the original inspiration having multiple, robotic parts.</p>
+			<img src="images/lightsaber.jpg" alt="Lightsaber Model" class="printonly"/>
+			<p>The model above is a lightsaber, based specifically on the one Luke Skywalker used. The reference for this
+			model was his lightsaber. Unlike the AT-ST, this was made using a single cylinder model. I needed to manually
+			create edges as I worked in order to shape it properly, as well as having to constantly use the extrusion tool.</p>
+			<img src="images/3dScene.jpg" alt="Unity Scene" class="printonly"/>
+			<p>The image above shows the final product, with my models and models made by other members in the scene as well.
+			All models were made in Maya and imported into Unity, where a person can control a first person camera and walk
+			around the bunker and forest terrain.;
+		</p>
+		</section>
+		<section id="mgContent">
+			<h1>Monogame Project</h1>
+			<h3>Team Members: Myself, Julia Wessen, Ryan Spencer, Rochelle Cohn, Nathan Sun</h3>
+
+			<section id="mgGallery">
+				<div id="mgContainer">
+					<div id="mgSlides">
+					  <img src="images/mainMenu.png" alt="Main Menu" />
+					  <img src="images/monoGameScreen1.png" alt="Screenshot from Game (Alive)" />
+					  <img src="images/monoGameScreen3.png" alt="Screenshot from Game (Dead)" />
+					</div>
+				</div>
+			</section>
+			<p id="mgDescription">(1/3) This silly-titled game was made by a team which I was a member of using Visual Studio and Monogame (all C#). My main
+			contribution was the main menu and game state implementing, an example of which is shown above.</p>
+			<img src="images/mainMenu.png" alt="Main Menu" class="screen printonly"/>
+			<p class="screen printonly">This silly-titled game was made by a team which I was a member of using Visual Studio and Monogame (all C#). My main
+			contribution was the main menu and game state implementing, an example of which is shown above.</p>
+			<img src="images/monoGameScreen1.png" alt="Screenshot from Game (Alive)" class="screen printonly"/>
+			<p class="screen printonly">In this game, you play as a guy named Paul, with his goal being to collect his scattered memories around the stages 
+			to progress to the next stage. In order to do this, Paul will purposedly take damage to go between an afterlife and the living world. When the 
+			player was dead, they could float and pass through certain blocks that were solid in the living world, and vice versa for when the player was alive.</p>
+			<img src="images/monoGameScreen3.png" alt="Screenshot from Game (Dead)" class="screen printonly"/>
+			<p class="screen printonly">While the game was short when we made it, we made a companion program that allowed us and other people to create and 
+			automatically add them to the game. This was useful for both adding levels to test out mechanics and to give a level editing thing that a lot of 
+			online games similar to ours have used (also made with C#).</p>
+		</section>
+		<section id="protoContent">
+			<h1>Mobile Game Prototpye</h1>
+			<img src="images/mobileProto1.png" alt="Mobile Prototype Menu" class="printonly mobimg" />
+			<p>This particular project was to create a prototype for some kind of mobile game, paying attention to UI and proper design conventions.
+			The prototype I made was for a fighting game that had elements of an RPG game with selectable attacks and a mana bar.</p>
+			<img src="images/mobileProto2.png" alt="Screenshot with Selected Fighter" class="printonly mobimg" />
+			<p>Any screens and menus of the game were made using Photoshop / GIMP, the game doesn't exist physically, though this is obvious with the
+			character in this screenshot being a character of a completely separate game made by someone else (being used as a placeholder character).
+			While the game doesn't exist, it is an idea I may come back to in the future if I want to continue this concept.</p>
+			<img src="images/mobileMB.png" alt="Moodboard" />
+			<p class="noprint">This moodboard was made to put my thoughts and ideas together that represent what my game is. The moodboard includes games that
+			inspired my idea, words to describe the game, and other images that relate to those concepts.</p>
+		</section>
+		<section id="unityContent">
+			<h1>Unity Project</h1>
+			<img src="images/unityDemo.jpg" alt="Flock Chasing Leader" class="printonly" />
+			<p>For a project to create a Unity demo utilizing seeking and fleeing forces for simple AI code, I created this.
+			It's fairly simple; a group of Pikachu models are chasing a butterfly. The butterfly doesn't move freely but on
+			a set path around the terrain, while the Pikachu move in a flock and are not on a set path. They move together
+			and keep a set distance apart so they don't all convene to the same spot.</p>
+			<img src="images/unityCode.png" alt="Screenshot of Code" class="printonly" />
+			<p>This snippet of code (which was made using C#) is for the seekers, and most of this method calls upon other methods that provide the
+			necessary forces that create the overall forces of the seekers. Alignment, Cohesion, and Separation are so the
+			flock reacts properly, while Leader Following and Seek give them the forces to chase the butterfly.</p>
+		</section>
+	</main>
+	<section class="homepage">
+		<section class="linktohome">
+			<a href="index.html"><img src="images/houseBox.jpg" alt="Homepage"/></a>
+		</section>
+	</section>
+	<!--#include virtual="footer.shtml"-->
+</body>
+
+</html>

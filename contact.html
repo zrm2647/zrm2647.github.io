@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Zach Michaels: Contact</title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function()
+		{
+			console.log(window.location.pathname);
+			if(window.location.pathname ==
+			"/~zrm2647/230/portfolio/contact.html")
+			{
+				$("#contact").addClass("activePage");
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<header class="noprint">
+		<!--#include virtual="header.shtml" -->
+		<!--#include virtual="nav.shtml"-->
+	</header>
+	<!--<nav>
+		<ul>
+			<li><a href="index.html" id="left">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="programming.html">Skills</a></li>
+			<li><a href="#" class="activePage">Contact</a></li>
+			<li><a href="Michaels-Resume.pdf" id="right" target="_blank">Resume</a></li>
+		</ul>
+	</nav>-->
+	<main>
+		<h1>Contact me!</h1>
+		<h2>E-mail</h2>
+		<p>zrm2647-at-g.rit.edu</p>
+		<h2>Phone</h2>
+		<p>(845) 532-0606</p>
+		<!--<section id="form">
+			<h2>Send a Form</h2>
+			<form method="post" action="https://people.rit.edu/zrm2647/230/portfolio/formmail.php" name="SampleForm">
+				<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+
+				
+				<input type="hidden" name="recipients" value="zrm2647@rit.edu" />
+
+			
+				<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+
+				
+				<input type="hidden" name="subject" value="Portfolio Message" />
+
+				
+				<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+				<input type="hidden" name="mail_options" value="Exclude=email;realname" />
+
+				<table border="1" cellspacing="5%">
+				<tr>
+					<td>
+					<p>Please enter your name:</p>
+					</td>
+					<td><input type="text" name="FullName" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Please enter your email address:</p>
+					</td>
+					<td><input type="text" name="EmailAddr" />
+					</td>
+				</tr>
+				<tr>
+					<td><p>May we contact you?</p>
+					</td>
+					<td>
+						Yes <input type="radio" name="contact" value="Y" checked="checked" />
+						No <input type="radio" name="contact" value="N" />
+					 </td>
+				</tr>
+				<tr>
+					<td valign="top">
+					<p>Please enter your message:</p>
+					</td>
+					<td><textarea name="mesg" rows="10" cols="50"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit" /></td>
+					<td style="text-align:right;"><span style="font-size:60%;">Powered by Tectite <a href="http://www.tectite.com/" target="_blank">php form</a> (FormMail).</span>
+					</td>
+				</tr>
+				</table>
+			</form>
+		</section>-->
+	</main>
+	<section class="homepage">
+		<section class="linktohome">
+			<a href="index.html"><img src="images/houseBox.jpg" alt="Homepage"/></a>
+		</section>
+	</section>
+	<!--#include virtual="footer.shtml"-->
+</body>
+
+</html>
