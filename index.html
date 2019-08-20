@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Zach Michaels: Portfolio</title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function()
+		{
+			console.log(window.location.pathname);
+			if(window.location.pathname ==
+			"/~zrm2647/230/portfolio/index.html")
+			{
+				$("#index").addClass("activePage");
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<header class="noprint">
+		<!--#include virtual="header.shtml" -->
+		<!--#include virtual="nav.shtml"-->
+	</header>
+	<main>
+		<h1>Hi, I'm Zach Michaels</h1>
+		<p onmouseover="change()">I'm a second year Game Design and Development student at RIT. I've been interested in pursuing this major since my junior year
+		of high school and I'm ready to learn more and become a proficient programmer and more. I'm currently searching for a co-op to help
+		further my education. So far I've learned coding in C#, C++, HTML, and CSS.</p>
+		<p>Below, you can check out some of the stuff I've made and learn more about me as well!</p>
+	</main>
+	<section id="pages">
+		<section id="links">
+			<a href="projects.html"><img src="images/projectsBox.jpg" class="left" alt="Project Page"/></a>
+			<a href="programming.html"><img src="images/skillsBox.jpg" class="left" alt="Skills page"/></a>
+			<a href="contact.html"><img src="images/contactBox.jpg" class="left" alt="Contact Page"/></a>
+			<a href="notes.html"><img src="images/notesBox.jpg" alt="Notes and Citations Page"/></a>
+		</section>
+		<section class="screen printonly">
+			<ul>
+				<li>https://people.rit.edu/zrm2647/230/portfolio/projects.html
+				<li>https://people.rit.edu/zrm2647/230/portfolio/programming.html
+				<li>https://people.rit.edu/zrm2647/230/portfolio/contact.html
+			</ul>
+		</section>
+	</section>
+	<!--#include virtual="footer.shtml"-->
+</body>
+
+</html>
